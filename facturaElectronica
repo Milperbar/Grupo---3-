@@ -1,0 +1,22 @@
+# Datos para factura electronica
+
+#Se crea la variante facturaElectronica para el menú de selección
+facturaElectronica=""
+
+print("¿Desea facura electronica?")
+facturaElectronica=input("Selecciones si(1) o no(2)")
+
+#En caso de que se solicite factura electrónica se solicitaran los datos necesarios para la misma
+
+if facturaElectronica == "1":
+    nombre=input("Introduzca el nombre de la factura: ")
+    identificacion=int(input("Introduzca su numero de identificación sin guiones ni espacios: "))
+    correo=str(input("Introduzca el correo electronico al que desea recibir su factura: "))
+# Se mostrara una confirmación de envío con los datos provistos por el usuario.
+
+    print("Se ha enviado la factura electronica a la dirección de correo electríonico")
+    print(correo, "con nombre", nombre, "con el número de identificacion", identificacion)
+    print("Muchas gracias por su visita")
+# En caso contrario se seguirá con el siguiente proceso del programa y se agradecerá al usuario
+else:
+    print("Muchas gracias por su visita")
